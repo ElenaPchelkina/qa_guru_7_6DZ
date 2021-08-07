@@ -18,7 +18,9 @@ public class SelenideTest {
 
     @Test
     public void testRepositoryIssue() {
+        //Открыть репозиторий
         open("/ElenaPchelkina/qa_guru_7_6DZ");
+        //Проверить,что раздел Issues существует
         $(".UnderlineNav-body").shouldHave(text("Issues"));
         }
     }
